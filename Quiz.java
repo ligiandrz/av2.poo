@@ -17,7 +17,7 @@ public class Quiz {
 
             System.out.println("\nBem-vindo ao Quiz, " + nome + "!\n");
 
-            // PERGUNTA 1 - Múltipla Escolha
+            // 1 
             Pergunta p1 = new PerguntaMultiplaEscolha(
                 "Qual linguagem é usada para desenvolvimento Android?",
                 1,
@@ -36,7 +36,7 @@ public class Quiz {
             if (p1.verificarResposta(r1)) pontuacaoRodada++;
 
 
-            // PERGUNTA 2 - Múltipla Escolha
+            //2 
             Pergunta p2 = new PerguntaMultiplaEscolha(
                 "Qual desses é um banco de dados relacional?",
                 1,
@@ -55,7 +55,7 @@ public class Quiz {
             if (p2.verificarResposta(r2)) pontuacaoRodada++;
 
 
-            // PERGUNTA 3 - V/F
+            // 3
             Pergunta p3 = new PerguntaVerdadeiroFalso(
                 "A linguagem Java é orientada a objetos.",
                 1,
@@ -69,7 +69,7 @@ public class Quiz {
             if (p3.verificarResposta(r3)) pontuacaoRodada++;
 
 
-            // PERGUNTA 4 - V/F
+            //4
             Pergunta p4 = new PerguntaVerdadeiroFalso(
                 "HTML é considerado uma linguagem de programação.",
                 1,
@@ -82,7 +82,6 @@ public class Quiz {
 
             if (p4.verificarResposta(r4)) pontuacaoRodada++;
 
-            // Soma ao total
             totalPontuacao += pontuacaoRodada;
             totalJogos++;
 
@@ -93,7 +92,6 @@ public class Quiz {
             System.out.println("Rodadas jogadas: " + totalJogos);
             System.out.println("-----------------------------");
 
-            // Perguntar se quer jogar novamente
             System.out.print("\nDeseja jogar novamente? (s/n): ");
             String resposta = sc.nextLine().trim().toLowerCase();
 
